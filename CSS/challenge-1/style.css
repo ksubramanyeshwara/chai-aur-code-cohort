@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #160e20, #0b0b0d);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement {
+  display: flex;
+  justify-content: center;
+}
+
+.announcement-link {
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #1f1a29;
+  padding: 0.5em 1.2em;
+  gap: 1em;
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.announcement-link:hover {
+  background-color: #261f33;
+}
+
+.announcement-text {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.announcement-button {
+  font-size: 1.8em;
+  color: #fff;
+  background-color: #36313f;
+  padding: 0 0.7em;
+  border-radius: 0.8em;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  text-align: center;
+  padding: 0 5em;
+  font-size: 3.5em;
+  color: #fdfdfd;
+  margin: 0.5em 0;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.hero-description {
+  text-align: center;
+  font-size: 1em;
+  padding: 0 24em;
+  color: #b7b7b9;
+  font-weight: 600;
+}
+
+.cta-button {
+  background-image: linear-gradient(to bottom, #3e57ea, #6b41ec);
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em 1.6em;
+  border-radius: 2em;
+  gap: 0.5em;
+  transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0 0 15px rgba(62, 87, 234, 0.5);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .announcement-link {
+    font-size: 0.75rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
+
+/*
+* Transition
+- The transition property should be added to the main element - This ensures the transition works in both directions - when entering and leaving the state.
+
+- Component should be added to the pesudo class
+
+transition: property duration timing-function delay;
+
+Key Components:
+property: What CSS property you want to animate (e.g., color, width, all)
+duration: How long the transition takes (in seconds or milliseconds)
+timing-function: The speed curve of the transition
+delay: How long to wait before starting (optional)
+
+Here's a simple example:
+.button {
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: red;
+}
+
+
+Common timing functions:
+ease: Slow start, fast middle, slow end (default)
+linear: Same speed throughout
+ease-in: Slow start, fast end
+ease-out: Fast start, slow end
+ease-in-out: Slow start and end, fast middle
+
+You can transition multiple properties:
+.element {
+    transition: 
+        background-color 0.3s ease,
+        transform 0.5s ease-in-out,
+        opacity 0.2s linear;
+}
+*/
+
+/* 
+* box-shadow
+
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+offset-x: Horizontal shadow position (required)
+Positive moves right
+Negative moves left
+
+offset-y: Vertical shadow position (required)
+Positive moves down
+Negative moves up
+
+blur-radius: How blurry the shadow is (optional)
+Higher values = more blur
+Default is 0
+
+spread-radius: Size of the shadow (optional)
+Positive values increase size
+Negative values decrease size
+Default is 0
+
+color: Shadow color (required)
+Can use any CSS color value
+rgba() is popular for transparency
+
+.box {
+    box-shadow: 2px 2px 5px gray;
+}
+*/
