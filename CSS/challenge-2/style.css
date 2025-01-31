@@ -1,0 +1,198 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --gray-800: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-900: #111827;
+
+  /* Dark mode variables */
+  --bg-dark: #111827;
+  --text-dark: #ffffff;
+  --border-dark: #374151;
+}
+
+body {
+  transition: all 0.5s ease-in-out;
+}
+
+.hero {
+  position: relative;
+  top: 7em;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 7em;
+}
+
+.content-col {
+  margin: -3em 0 0 0;
+}
+
+.content-col h1 {
+  font-size: 4em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-col p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4em;
+  margin: -1em 0 1em 0;
+}
+
+.cta-group {
+  display: flex;
+  margin: 3em 0;
+}
+
+.sr-only {
+}
+
+.input-wrapper {
+}
+
+input[type="text"] {
+}
+
+.demo-button {
+  background-color: var(--primary-blue);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 1.3em;
+  margin: 0 0 0 1em;
+}
+
+.demo-button:hover {
+  cursor: pointer;
+}
+
+.brands-section {
+}
+
+.trusted-by {
+  font-family: monospace;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.brand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0 0 0;
+}
+
+.brand-logo {
+  height: 2em;
+}
+
+.brand-logo:last-child {
+  margin: 0 0 0 -3em;
+}
+
+.image-col {
+}
+
+.hero-image {
+  width: 35em;
+  border-radius: 1em;
+}
+
+@media (min-width: 640px) {
+  .hero {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .demo-button {
+    background-color: var(--primary-blue);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em 1.3em;
+    margin: 0 0 0 1em;
+  }
+
+  .input-wrapper {
+  }
+
+  input[type="text"] {
+    padding: 1em 4em 1em 1em;
+    border-radius: 0.5em;
+    border: 1px solid var(--neutral-400);
+  }
+}
+
+@media (min-width: 768px) {
+  .content-col h1 {
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+  }
+
+  .hero-grid {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .brands-section {
+  }
+
+  .image-col {
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+}
+
+.dark-mode-toggle {
+  border: none;
+  background-color: var(--primary-blue-dark);
+  color: var(--text-dark);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  position: absolute;
+  right: 8em;
+  top: 2.5em;
+  font-size: 1em;
+}
+
+.dark-mode-toggle:hover {
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+/* .dark-mode-toggle {
+}
+
+.dark-mode-toggle:hover {
+} */
+
+input[type="text"].dark {
+  border: 1px solid var(--border-dark);
+}
+
+input[type="text"]::placeholder {
+  color: var(--neutral-400);
+}
